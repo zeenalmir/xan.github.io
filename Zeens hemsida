@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zeen Almir - Mitt personliga hemsida</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .contact {
+            margin-top: 20px;
+            font-size: 16px;
+        }
+        .contact a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        .contact a:hover {
+            text-decoration: underline;
+        }
+        /* Dark mode styling */
+        .dark-mode {
+            background-color: #333;
+            color: #f4f4f4;
+        }
+        .dark-mode .container {
+            background: #444;
+        }
+        .dark-mode .contact a {
+            color: #00ccff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT1CRRwCxR3zUFFagpw99MsWEEQdz3Ofvu6g&s" alt="Zeen Almir">
+        <h1>Zeen Almir</h1>
+        <h2>Mitt personliga hemsida</h2>
+        <p>Hej jag heter Zeen och jag går i NTI gymnasiet och är 19 år gammal. Jag gillar att gymma på fritiden och spela fotboll.</p>
+        <div class="contact">
+            <p>Kontakta mig via e-post: <a href="mailto:zeenalmir@gmail.com">zeenalmir@gmail.com</a></p>
+        </div>
+    </div>  
+    <h2>Natt läge</h2>
+    <p>Klicka på knappen för att ändra till nattläge.</p>
+    <button onclick="myFunction()">Klicka här</button>
+
+    <script>
+    function myFunction() {
+       var element = document.body;
+       element.classList.toggle("dark-mode");
+    }
+    </script>
+</body>
+</html>
